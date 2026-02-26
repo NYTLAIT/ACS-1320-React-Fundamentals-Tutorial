@@ -1,0 +1,21 @@
+.Footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: justify;
+    padding: 1em;
+    margin: 2em 0 0 0;
+    background-color: rgb(192, 45, 26);
+    color: #fff;
+}
+
+.Footer-Copyright {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.Footer > p {
+    margin: 0;
+    padding: 0;
+}
