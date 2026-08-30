@@ -1,18 +1,18 @@
-import './POPOSSpace.css'
+import styles from './POPOSSpace.module.css'
 import { Link } from 'react-router-dom'
 
 function POPOSSpace(props) {
     const { name, image, address, hours, id } = props
     return (
-        <div className="POPOSSpace" >
+        <div className={styles.POPOSSpace} >
             <Link to={`/details/${id}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/${image}`}
                     width="300"
                     height="300"
-                    alt="50 Califonia St."
+                    alt={`Image of ${name}`}
                 />
             </Link>
-            <h1>  
+            <h1>
                 <Link to={`/details/${id}`}>
                     {name}
                 </Link>

@@ -1,19 +1,19 @@
-import './Title.css';
+import styles from './Title.module.css';
 import { NavLink } from 'react-router-dom'
 
 function Title() {
     return (
-        <div className='Title'>
+        <div className={styles.Title}>
             <header>
                 <h1>SFPOPOS</h1>
-                <div className="Title-Subtitle">San Francisco Privately Owned Public Open Spaces</div>
+                <div className={styles['Title-Subtitle']}>San Francisco Privately Owned Public Open Spaces</div>
 
                 <div>
                     <NavLink
-                        className={({ isActive }) => isActive ? "nav-link-active" : "nav-link"}
+                        className={({ isActive }) => isActive ? styles["nav-link-active"] : styles["nav-link"]}
                         to="/">List</NavLink>
                     <NavLink
-                        className={({ isActive }) => isActive ? "nav-link-active" : "nav-link"}
+                        className={({ isActive }) => isActive ? styles["nav-link-active"] : styles["nav-link"]}
                         to="/about">About</NavLink>
                 </div>
 
