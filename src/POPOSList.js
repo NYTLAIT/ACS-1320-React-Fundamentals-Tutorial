@@ -1,13 +1,13 @@
+import styles from './POPOSList.module.css'
 import data from './sfpopos-data.json'
-import './POPOSList.css'
 import POPOSSpace from "./POPOSSpace"
 
 function POPOSList() {
     const spaces = data.map(({ title, address, images, hours }, i) => {
         return (
             <POPOSSpace
-                id = {i}
-                key = {title}
+                id={i}
+                key={title}
                 name={title}
                 address={address}
                 image={images[0]}
@@ -17,7 +17,7 @@ function POPOSList() {
     })
 
     return (
-        <div className="POPOSList">
+        <div className={styles.POPOSList}>
             {spaces}
         </div>
     )
