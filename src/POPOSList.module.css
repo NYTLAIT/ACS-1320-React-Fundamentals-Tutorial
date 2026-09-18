@@ -1,13 +1,32 @@
 .POPOSList {
-    width: calc(100% - 80px);
-    margin: auto;
+    width: 100%;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 40px;
+    grid-gap: 2rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+    .POPOSList {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem 2rem;
+        padding: 1rem 2rem;
+    }
 }
 
 @media (min-width: 1024px) {
     .POPOSList {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem 3rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .POPOSList {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 4rem 4rem;
+        padding: 2rem 4rem;
     }
 }

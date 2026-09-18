@@ -6,20 +6,18 @@ function POPOSSpace(props) {
     return (
         <div className={styles.POPOSSpace} >
             <Link to={`/details/${id}`}>
-                <img src={`${process.env.PUBLIC_URL}/images/${image}`}
-                    width="300"
-                    height="300"
-                    alt={`Image of ${name}`}
+                <img className={styles.POPOSSpaceImg} src={`${process.env.PUBLIC_URL}/images/${image}`}
+                    alt={`${name}`}
                 />
+                <div className={styles.POPOSSpaceText}>
+                    <h1>{name}</h1>
+                    <div className={styles.POPOSSpaceTextP}>
+                        <p>{address}</p>
+                        <p>{hours}</p>
+                    </div>
+                </div>
             </Link>
-            <h1>
-                <Link to={`/details/${id}`}>
-                    {name}
-                </Link>
-            </h1>
-            <div>{address}</div>
-            <div>{hours}</div>
-        </div>
+        </div >
     )
 }
 

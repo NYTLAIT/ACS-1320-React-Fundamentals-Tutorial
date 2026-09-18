@@ -1,9 +1,71 @@
 .POPOSSpace {
     width: 100%;
-    text-align: center;
+    min-width: 0;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.POPOSSpace > img {
+.POPOSSpace a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%
+}
+
+.POPOSSpaceImg {
+    aspect-ratio: 16/9;
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.POPOSSpaceText {
+    text-align: start;
+    margin: 0;
+    padding: 0.4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.POPOSSpaceText h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.POPOSSpaceText p {
+    margin: 0.2rem
+}
+
+.POPOSSpaceTextP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .POPOSSpace {
+        border: 2px solid rgb(192, 45, 26);
+        border-radius: 11px;
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .POPOSSpaceImg {
+        aspect-ratio: auto;
+    }
+
+    .POPOSSpaceText {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    .POPOSSpaceText h1 {
+        text-align: center;
+    }
 }
