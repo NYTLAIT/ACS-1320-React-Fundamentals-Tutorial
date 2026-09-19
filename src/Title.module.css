@@ -2,12 +2,13 @@
     box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding: 1em;
+    align-items: center;
+    padding: 0 1rem;
     margin-bottom: 2em;
     background-color: rgb(192, 45, 26);
     color: #fff;
+
+    gap: 2rem
 }
 
 .Title-Subtitle {
@@ -15,17 +16,28 @@
     margin: 0 0 0 0.4rem
 }
 
+.Title nav {
+    width: 100px;
+    border: 1px solid rgb(192, 45, 26);
+    background-color: #fff;
+    position: absolute;
+    z-index: 9999;
+    top: 4rem;
+    display: block;
+    right: 1rem;
+}
+
 .Title a {
-    display: inline-block;
+    display: block;
     padding: 0.5em 1em;
-    color: rgba(255, 255, 255, 0.835);
+    color: rgb(192, 45, 26, 0.835);
     font-weight: bold;
     text-decoration: none;
 }
 
 .Title .nav-link-active {
-    color: #fff;
-    border-bottom: 2px solid;
+    color: rgb(192, 45, 26);
+    font-style: italic;
 }
 
 .Title-menu-btn {
@@ -35,10 +47,15 @@
     padding: 8px;
     min-width: 44px;
     min-height: 44px;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+}
+
+.Title span {
+    color: white;
 }
 
 .Title-menu-btn span {
@@ -59,7 +76,12 @@
     max-height: 300px
 }
 
-@media (min-width: 768px) {
+.Title a:hover {
+    background-color: rgb(192, 45, 26);
+    color: #fff;
+}
+
+@media (min-width: 1024px) {
     .Title-nav {
         max-height: none;
         overflow: visible;
@@ -69,5 +91,16 @@
 
     .Title-menu-btn {
         display: none;
+    }
+
+    .Title nav {
+        position: static;
+        width: auto;
+        display: flex;
+    }
+
+    .Title .nav-link-active {
+        color: #fff;
+        border-bottom: 2px solid;
     }
 }

@@ -21,7 +21,6 @@ function Title() {
   return (
     <header className={styles.Title} ref={navRef}>
       <h1>SFPOPOS</h1>
-      {/* <div className={styles['Title-Subtitle']}>San Francisco Privately Owned Public Open Spaces</div> */}
 
       <nav
         className={styles[`Title-nav${isOpen ? 'Title-nav--open' : ''}`]}

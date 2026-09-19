@@ -24,8 +24,8 @@ function POPOSDetails() {
                             return <li>{feature}</li>
                         })}
                     </ul>
-                    <p>{website}</p>
-                    <p>{`lat:${geo.lat} long:${geo.lon}`}</p>
+                    {website && <a className={styles.POPOSDetailsWebsite} href={website}>Visit: {website}</a>}
+                    {/* <p>{`lat:${geo.lat} long:${geo.lon}`}</p> */}
                 </div>
 
             </div>

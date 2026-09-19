@@ -26,6 +26,10 @@
     text-align: left;
 }
 
+.POPOSDetailsWebsite {
+    border: 1px solid red
+}
+
 @media (min-width: 1024px) {
     .POPOSDetails {
         grid-template-areas: 'a b';
