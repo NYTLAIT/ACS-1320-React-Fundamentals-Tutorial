@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import './App.css';
+import styles from './App.module.css';
 
 
 import Title from './Title';
@@ -7,9 +7,11 @@ import Footer from './Footer';
 
 function App() {
     return (
-        <div className="App">
+        <div className={styles.App}>
             <Title />
-            <Outlet className='content' />
+            <main className={styles.Content}>
+                <Outlet />
+            </main>
             <Footer />
         </div>
     );

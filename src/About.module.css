@@ -1,0 +1,14 @@
+.About {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 0 1rem;
+}
+
+.About h2 {
+    border: 2px solid rgb(192, 45, 26);
+    width: max-content;
+    padding: 0.2rem 1rem;
+    border-radius: 11px;
+    margin-inline: auto;
+    color: rgb(192, 45, 26);
+}
