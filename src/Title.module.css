@@ -97,10 +97,15 @@
         position: static;
         width: auto;
         display: flex;
+        background-color: rgb(192, 45, 26);
+    }
+
+    .Title a {
+        color: white;
     }
 
     .Title .nav-link-active {
-        color: #fff;
+        color: white;
         border-bottom: 2px solid;
     }
 }
