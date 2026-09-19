@@ -1,4 +1,6 @@
 .POPOSDetails {
+    max-width: 1400px;
+    margin-inline: auto;
     display: grid;
     grid-template-areas:
         'a'
@@ -18,16 +20,25 @@
 
 .POPOSDetailsText {
     grid-area: b;
-    padding: 1rem
+    padding: 1rem;
 }
 
-.POPOSFineDetails {
-    padding: 1rem;
-    text-align: left;
+ul {
+    list-style: none;
+    margin: none;
+    padding: none;
+}
+
+.POPOSDetailsHrsAdd {
+    padding: 0 1rem;
+}
+
+.POPOSDetailsFeatures {
+    padding: 0 0 0 1rem;
 }
 
 .POPOSDetailsWebsite {
-    border: 1px solid red
+    color: rgb(192, 45, 26)
 }
 
 @media (min-width: 1024px) {

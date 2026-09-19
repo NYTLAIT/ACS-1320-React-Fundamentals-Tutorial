@@ -5,7 +5,7 @@ import data from './sfpopos-data.json'
 function POPOSDetails() {
     const params = useParams()
     const { id } = params
-    const { images, title, desc, hours, features, geo, address, website } = data[id]
+    const { images, title, desc, hours, features, address, website } = data[id]
 
     return (
         <div className={styles.POPOSDetails}>
@@ -16,17 +16,21 @@ function POPOSDetails() {
             <div className={styles.POPOSDetailsText}>
                 <h1>{title}</h1>
                 <p>{desc}</p>
-                <div className={styles.POPOSFineDetails}>
-                    <p><b>Hours: </b>{hours}</p>
-                    <p><b>Address: </b>{address}</p>
+                <div className={styles.POPOSDetailsHrsAdd}>
+                    {hours && <p><b>Hours: </b>{hours}</p>}
+                    {address && <p><b>Address: </b>{address}</p>}
+                </div>
+
+                <div className={styles.POPOSDetailsFeatures}>
+                    {features && <p><b>Features: </b></p>}
                     <ul>
                         {features.map(feature => {
-                            return <li>{feature}</li>
+                            return <li> - {feature}</li>
                         })}
                     </ul>
-                    {website && <a className={styles.POPOSDetailsWebsite} href={website}>Visit: {website}</a>}
-                    {/* <p>{`lat:${geo.lat} long:${geo.lon}`}</p> */}
                 </div>
+
+                {website && <a className={styles.POPOSDetailsWebsite} href={website}> ᯓ➤ Visit the {title} Site</a>}
 
             </div>
 

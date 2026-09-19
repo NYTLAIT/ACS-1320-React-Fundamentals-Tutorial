@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <Title />
-            <Outlet />
+            <Outlet className='content' />
             <Footer />
         </div>
     );
