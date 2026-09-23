@@ -1,4 +1,4 @@
-import styles from './POPOSDetails.module.css'
+// import styles from './POPOSDetails.module.css'
 import { useParams } from 'react-router'
 import data from './sfpopos-data.json'
 
@@ -8,33 +8,39 @@ function POPOSDetails() {
   const { images, title, desc, hours, features, address, website } = data[id]
 
   return (
-    <div className={styles.POPOSDetails}>
-      <div className={styles.POPOSDetailsImage}>
-        <img src={`${process.env.PUBLIC_URL}/images/${images[0]}`} alt={title} />
+    <div className="mx-auto max-w-[1400px] grid grid-cols-1 lg:grid-cols-2">
+      <div className="w-full">
+        <img
+          src={`${process.env.PUBLIC_URL}/images/${images[0]}`}
+          alt={title}
+          className="block w-full h-auto lg:w-auto lg:h-full"
+        />
       </div>
 
-      <div className={styles.POPOSDetailsText}>
-        <h1>{title}</h1>
-        <p>{desc}</p>
-        <div className={styles.POPOSDetailsHrsAdd}>
+      <div className="p-2">
+        <h1 className="text-3xl font-bold">{title}</h1>
+        <p className='py-2'>{desc}</p>
+
+        <div className="py-2 px-4">
           {hours && <p><b>Hours: </b>{hours}</p>}
           {address && <p><b>Address: </b>{address}</p>}
         </div>
 
-        <div className={styles.POPOSDetailsFeatures}>
+        <div className="pt-2 pb-4 px-4">
           {features && <p><b>Features: </b></p>}
-          <ul>
-            {features.map(feature => {
-              return <li> - {feature}</li>
-            })}
+          <ul className="list-none p-0 m-0">
+            {features.map(feature => (
+              <li key={feature}> - {feature}</li>
+            ))}
           </ul>
         </div>
 
-        {website && <a className={styles.POPOSDetailsWebsite} href={website}> ᯓ➤ Visit the {title} Site</a>}
-
+        {website && (
+          <a className="text-brand" href={website}>
+            ᯓ➤ Visit the {title} Site</a>
+        )}
       </div>
-
-    </div >
+    </div>
   )
 }
 
