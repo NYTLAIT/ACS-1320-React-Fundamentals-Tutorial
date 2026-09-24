@@ -19,11 +19,22 @@ function Title() {
   }, [])
 
   return (
-    <header className={styles.Title} ref={navRef}>
-      <h1>SFPOPOS</h1>
+    <header
+      className='
+        box-border w-full px-8 mb-[2em]
+        flex items-center gap-8
+        bg-brand text-white'
+      ref={navRef}
+    >
+      <h1 className='text-2xl'>SFPOPOS</h1>
 
       <nav
-        className={styles[`Title-nav${isOpen ? 'Title-nav--open' : ''}`]}
+        className={`
+          absolute right-4 top-16 z-[9999]
+          w-[100px] bg-white
+          overflow-hidden flex flex-col
+          transition-all duration-300
+          ${isOpen ? 'max-h-[300px]' : ''}`}
         aria-hidden={!isOpen}
       >
         <NavLink
@@ -39,14 +50,18 @@ function Title() {
       </nav>
 
       <button
-        className={styles['Title-menu-btn']}
+        className='
+          min-w-[44px] min-h-[44px] ml-auto p-2
+          flex flex-col justify-center gap-1
+          bg-transparent border-none
+          cursor-pointer lg:hidden'
         aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className="block w-6 h-[2px] bg-current text-white"></span>
+        <span className="block w-6 h-[2px] bg-current text-white"></span>
+        <span className="block w-6 h-[2px] bg-current text-white"></span>
       </button>
 
     </header>

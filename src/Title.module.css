@@ -26,6 +26,17 @@
     right: 1rem;
 }
 
+.Title-nav {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: max-height 0.3s ease;
+}
+
+.Title-nav--open {
+    max-height: 300px
+}
+
 .Title a {
     display: block;
     padding: 0.5em 1em;
@@ -63,17 +74,6 @@
     width: 24px;
     height: 2px;
     background: currentColor;
-}
-
-.Title-nav {
-    max-height: 0;
-    overflow: hidden;
-    flex-direction: column;
-    transition: max-height 0.3s ease;
-}
-
-.Title-nav--open {
-    max-height: 300px
 }
 
 .Title a:hover {
