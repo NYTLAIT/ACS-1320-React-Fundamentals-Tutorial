@@ -1,20 +1,20 @@
 import { Outlet } from 'react-router-dom'
-import styles from './App.module.css';
+// import styles from './App.module.css';
 
 
 import Title from './Title';
 import Footer from './Footer';
 
 function App() {
-    return (
-        <div className={styles.App}>
-            <Title />
-            <main className={styles.Content}>
-                <Outlet />
-            </main>
-            <Footer />
-        </div>
-    );
+  return (
+    <div className='min-h-screen flex flex-col'>
+      <Title />
+      <main className='flex flex-1'>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

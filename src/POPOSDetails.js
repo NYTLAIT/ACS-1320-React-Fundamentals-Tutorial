@@ -13,12 +13,12 @@ function POPOSDetails() {
         <img
           src={`${process.env.PUBLIC_URL}/images/${images[0]}`}
           alt={title}
-          className="block w-full h-auto lg:w-auto lg:h-full"
+          className="block w-full h-auto object-cover"
         />
       </div>
 
       <div className="p-2">
-        <h1 className="text-3xl font-bold">{title}</h1>
+        <h1 className="text-center text-3xl font-bold">{title}</h1>
         <p className='py-2'>{desc}</p>
 
         <div className="py-2 px-4">

@@ -1,11 +1,13 @@
-import styles from './About.module.css'
+// import styles from './About.module.css'
 
 function About() {
   return (
-    <div className={styles.About}>
-      <h1>About SFPOPOS</h1>
-      <h2>San Francisco Privately Owned Public Spaces</h2>
-      <p>POPOS are publicly accessible spaces in
+    <div className='
+      max-w-[800px] mx-auto my-auto px-4
+    '>
+      <h1 className="font-bold text-2xl">About SFPOPOS</h1>
+      <h2 className="text-lg text-brand">San Francisco Privately Owned Public Spaces</h2>
+      <p className="py-4">POPOS are publicly accessible spaces in
         forms of plazas, terraces, atriums, small
         parks, and even snippets which are provided
         and maintained by private developers. In San
