@@ -36,7 +36,7 @@ function POPOSDetails() {
         </div>
 
         {website && (
-          <a className="text-brand" href={website}>
+          <a className="text-brand hover:underline" href={website}>
             ᯓ➤ Visit the {title} Site</a>
         )}
       </div>
