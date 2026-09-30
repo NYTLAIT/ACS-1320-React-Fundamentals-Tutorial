@@ -31,7 +31,7 @@ function Title() {
       <nav
         className={`
           absolute right-6 top-12 z-[9999]
-          w-[100px] border border-brand 
+          w-[160px] border border-brand 
           bg-white text-brand
           overflow-hidden flex flex-col
           ${isOpen ? 'max-h-[300px]' : 'max-h-0 border-none'}
@@ -68,6 +68,19 @@ function Title() {
           onClick={() => setIsOpen(false)}
           to="/about">
           About</NavLink>
+        <NavLink
+          className={({ isActive }) => `
+            px-4 py-4 text-center text-lg
+            lg:py-1
+            hover:bg-brand hover:text-white
+            ${isActive
+              ? 'italic font-bold lg:border-b-2 lg:text-white lg:font-normal'
+              : ''
+            }`
+          }
+          onClick={() => setIsOpen(false)}
+          to="/new-space">
+          Add a Space</NavLink>
       </nav>
 
       <button

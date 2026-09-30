@@ -7,20 +7,22 @@ import App from './App';
 import POPOSList from './POPOSList';
 import About from './About'
 import POPOSDetails from './POPOSDetails'
+import POPOSForm from './POPOSForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <Router>
-            <Routes> 
-                <Route path="/" element={<App />}>
-                    <Route path="/" element={<POPOSList />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="/details/:id" element={<POPOSDetails />} />
-                </Route>
-            </Routes> 
-        </Router>
-    </React.StrictMode>
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="/" element={<POPOSList />} />
+          <Route path="about" element={<About />} />
+          <Route path="/details/:id" element={<POPOSDetails />} />
+          <Route path="/new-space" element={<POPOSForm />} />
+        </Route>
+      </Routes>
+    </Router>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
