@@ -26,7 +26,7 @@ function Title() {
         bg-brand text-white'
       ref={navRef}
     >
-      <h1 className='text-2xl'>SFPOPOS</h1>
+      <h1 className='text-[clamp(1.5rem,5vw,1.75rem)]'>SFPOPOS</h1>
 
       <nav
         className={`

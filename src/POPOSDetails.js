@@ -8,7 +8,7 @@ function POPOSDetails() {
   const { images, title, desc, hours, features, address, website } = data[id]
 
   return (
-    <div className="mx-auto max-w-[1400px] grid grid-cols-1 lg:grid-cols-2">
+    <div className="mx-auto max-w-[1400px] grid grid-cols-1 md:grid-cols-2">
       <div className="w-full">
         <img
           src={`${process.env.PUBLIC_URL}/images/${images[0]}`}
@@ -18,7 +18,7 @@ function POPOSDetails() {
       </div>
 
       <div className="p-2">
-        <h1 className="text-center text-3xl font-bold">{title}</h1>
+        <h1 className="text-center text-[clamp(1.5rem,4vw,2rem)] font-bold">{title}</h1>
         <p className='py-2'>{desc}</p>
 
         <div className="py-2 px-4">

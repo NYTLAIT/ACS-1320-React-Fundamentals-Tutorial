@@ -19,7 +19,7 @@ function POPOSSpace(props) {
           flex flex-1 justify-between gap-1
           lg:flex-col lg:gap-2 lg:pb-4
         '>
-          <h1 className='text-start m-0 text-2xl 
+          <h1 className='text-start m-0 text-[clamp(1rem,5vw,1.5rem)]
             lg:text-center'>{name}</h1>
           <div className='flex flex-col'>
             <p className='m-1 lg:m-0 text-brand'><em>{address}</em></p>
