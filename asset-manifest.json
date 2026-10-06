@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/static/css/main.00cdd01d.css",
+    "main.js": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/static/js/main.c7c3bbd7.js",
+    "static/js/453.0000dbc6.chunk.js": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/static/js/453.0000dbc6.chunk.js",
+    "index.html": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/index.html",
+    "main.00cdd01d.css.map": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/static/css/main.00cdd01d.css.map",
+    "main.c7c3bbd7.js.map": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/static/js/main.c7c3bbd7.js.map",
+    "453.0000dbc6.chunk.js.map": "/NYTLAIT/ACS-1320-React-Fundamentals-Tutorial/static/js/453.0000dbc6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00cdd01d.css",
+    "static/js/main.c7c3bbd7.js"
+  ]
+}
