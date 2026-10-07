@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import POPOSList from './POPOSList';
@@ -15,10 +15,10 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="/" element={<POPOSList />} />
+          <Route index element={<POPOSList />} />
           <Route path="about" element={<About />} />
-          <Route path="/details/:id" element={<POPOSDetails />} />
-          <Route path="/new-space" element={<POPOSForm />} />
+          <Route path="details/:id" element={<POPOSDetails />} />
+          <Route path="new-space" element={<POPOSForm />} />
         </Route>
       </Routes>
     </Router>
