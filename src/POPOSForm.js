@@ -30,7 +30,7 @@ function POPOSForm() {
   }
 
   return (
-    <div className='px-8'>
+    <div className=' mx-auto my-auto px-4'>
       <h1 id="space-form-title" className="text-[clamp(1.5rem,4vw,2rem)] font-bold">Submit a New Space!</h1>
 
       <form
